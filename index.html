@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IITian Academy - Premier Coaching Institute</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .subject-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .subject-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .teachers-section {
+            background-color: #ecf0f1;
+            padding: 2rem 0;
+            margin: 2rem 0;
+        }
+
+        .teacher-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-section {
+            background-color: #2980b9;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .subject-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>IITian Academy</h1>
+        <p>Premier Coaching for JEE Aspirants</p>
+    </header>
+
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>Why Choose Us?</h2>
+            <p>Get mentored by IIT alumni with proven track record of success in JEE examinations. Personalized attention and comprehensive study material.</p>
+        </section>
+
+        <section id="subjects">
+            <h2>Our Subjects</h2>
+            <div class="subject-section">
+                <div class="subject-card">
+                    <h3>Physics</h3>
+                    <p>Master classical mechanics, thermodynamics, and modern physics with our expert faculty.</p>
+                </div>
+                <div class="subject-card">
+                    <h3>Chemistry</h3>
+                    <p>In-depth coverage of physical, organic, and inorganic chemistry concepts.</p>
+                </div>
+                <div class="subject-card">
+                    <h3>Mathematics</h3>
+                    <p>Develop strong problem-solving skills in calculus, algebra, and geometry.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="teachers-section" id="teachers">
+            <h2>Our Expert Faculty</h2>
+            <div class="teacher-card">
+                <h3>Dr. Ravi Sharma (IIT Bombay)</h3>
+                <p>15+ years experience in JEE Physics coaching</p>
+            </div>
+            <div class="teacher-card">
+                <h3>Prof. Anjali Singh (IIT Delhi)</h3>
+                <p>Renowned Chemistry educator with 12+ years experience</p>
+            </div>
+            <div class="teacher-card">
+                <h3>Dr. Vikram Patel (IIT Madras)</h3>
+                <p>Mathematics expert specializing in problem-solving techniques</p>
+            </div>
+        </section>
+    </div>
+
+    <section class="contact-section" id="contact">
+        <h2>Start Your JEE Journey Today</h2>
+        <p>Address: 123 Academic Road, Kota, Rajasthan</p>
+        <p>Email: contact@iitianacademy.com</p>
+        <a href="#contact" class="btn" onclick="showAdmissionAlert()">Book Free Demo Class</a>
+    </section>
+
+    <footer class="footer">
+        <p>© 2023 IITian Academy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showAdmissionAlert() {
+            alert("Thank you for your interest! Our team will contact you shortly to schedule your free demo class.");
+        }
+    </script>
+</body>
+</html>
