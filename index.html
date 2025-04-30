@@ -1,9 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags and title remain same -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IITian Academy - Premier Coaching Institute</title>
     <style>
-        /* CSS remains unchanged */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .subject-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .subject-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .teachers-section {
+            background-color: #ecf0f1;
+            padding: 2rem 0;
+            margin: 2rem 0;
+        }
+
+        .teacher-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-section {
+            background-color: #2980b9;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .location-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+        }
+
+        .policy-list {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .subject-section {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -12,7 +109,13 @@
         <p>Almora's First Institute with Top IIT Faculty | Classes 9th to 12th</p>
     </header>
 
-    <!-- Navigation remains same -->
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#locations">Locations</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <div class="container">
         <section id="about">
@@ -31,7 +134,27 @@
             </ul>
         </section>
 
-        <!-- Subjects Section remains same (already has 4 subjects) -->
+        <section id="subjects">
+            <h2>Our Subjects</h2>
+            <div class="subject-section">
+                <div class="subject-card">
+                    <h3>Mathematics</h3>
+                    <p>Comprehensive coverage of CBSE/ICSE syllabus with JEE preparation</p>
+                </div>
+                <div class="subject-card">
+                    <h3>Physics</h3>
+                    <p>Theoretical concepts and practical applications</p>
+                </div>
+                <div class="subject-card">
+                    <h3>Chemistry</h3>
+                    <p>Organic, Inorganic and Physical chemistry modules</p>
+                </div>
+                <div class="subject-card">
+                    <h3>Computer Science</h3>
+                    <p>Complete programming and theory syllabus</p>
+                </div>
+            </div>
+        </section>
 
         <section class="teachers-section" id="teachers">
             <h2>Our Expert Faculty</h2>
@@ -61,10 +184,19 @@
             </ul>
         </section>
 
-        <!-- Contact Section remains same -->
+        <section class="contact-section" id="contact">
+            <h2>Class Schedule & Registration</h2>
+            <p>Morning Batch: 5 AM - 7 AM</p>
+            <p>Evening Batch: 5 PM - 7 PM</p>
+            <p>All live classes recorded and available for revision</p>
+            <h3 style="margin-top:1rem;">Admissions Open!</h3>
+            <p>Contact Now: 9267998156</p>
+        </section>
     </div>
 
-    <!-- Footer remains same -->
-    <!-- Script remains same -->
+    <footer class="footer">
+        <p>"Empower your children to become self-reliant - they shouldn't need others' examples to grow confident"</p>
+        <p>© 2023 IITian Academy. All rights reserved.</p>
+    </footer>
 </body>
 </html>
