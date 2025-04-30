@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IITian Academy - Premier Coaching Institute</title>
     <style>
+        /* Previous CSS remains same */
         * {
             margin: 0;
             padding: 0;
@@ -43,7 +44,7 @@
 
         .subject-section {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
             margin: 2rem 0;
         }
@@ -95,6 +96,17 @@
             margin-top: 1rem;
         }
 
+        .location-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+        }
+
+        .policy-list {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
         @media (max-width: 768px) {
             .subject-section {
                 grid-template-columns: 1fr;
@@ -105,36 +117,49 @@
 <body>
     <header class="header">
         <h1>IITian Academy</h1>
-        <p>Premier Coaching for JEE Aspirants</p>
+        <p>Alwar's First Institute with Top IIT Faculty | Classes 9th to 12th</p>
     </header>
 
     <nav class="nav">
         <a href="#about">About</a>
         <a href="#subjects">Subjects</a>
         <a href="#teachers">Teachers</a>
+        <a href="#locations">Locations</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
         <section id="about">
             <h2>Why Choose Us?</h2>
-            <p>Get mentored by IIT alumni with proven track record of success in JEE examinations. Personalized attention and comprehensive study material.</p>
+            <p>CBSE & ICSE Board Coaching with unique features:</p>
+            <ul class="policy-list">
+                <li>Monthly fee payment after completion of each month</li>
+                <li>Option to change teachers if unsatisfied</li>
+                <li>24/7 doubt resolution during and after class</li>
+                <li>Mandatory parent-teacher meetings</li>
+                <li>Extra classes for weak students</li>
+                <li>Dedicated offline teachers at each center</li>
+            </ul>
         </section>
 
         <section id="subjects">
             <h2>Our Subjects</h2>
             <div class="subject-section">
                 <div class="subject-card">
+                    <h3>Mathematics</h3>
+                    <p>Comprehensive coverage of CBSE/ICSE syllabus with JEE preparation</p>
+                </div>
+                <div class="subject-card">
                     <h3>Physics</h3>
-                    <p>Master classical mechanics, thermodynamics, and modern physics with our expert faculty.</p>
+                    <p>Theoretical concepts and practical applications</p>
                 </div>
                 <div class="subject-card">
                     <h3>Chemistry</h3>
-                    <p>In-depth coverage of physical, organic, and inorganic chemistry concepts.</p>
+                    <p>Organic, Inorganic and Physical chemistry modules</p>
                 </div>
                 <div class="subject-card">
-                    <h3>Mathematics</h3>
-                    <p>Develop strong problem-solving skills in calculus, algebra, and geometry.</p>
+                    <h3>Computer Science</h3>
+                    <p>Complete programming and theory syllabus</p>
                 </div>
             </div>
         </section>
@@ -142,28 +167,43 @@
         <section class="teachers-section" id="teachers">
             <h2>Our Expert Faculty</h2>
             <div class="teacher-card">
-                <h3>Dr. Ravi Sharma (IIT Bombay)</h3>
-                <p>15+ years experience in JEE Physics coaching</p>
+                <h3>Rahul Sir (Mathematics)</h3>
+                <p>M.Sc Mathematics | IIT Guwahati AIR-95 | 7 Years Experience</p>
             </div>
             <div class="teacher-card">
-                <h3>Prof. Anjali Singh (IIT Delhi)</h3>
-                <p>Renowned Chemistry educator with 12+ years experience</p>
+                <h3>Dev Sir (Physics)</h3>
+                <p>M.Sc Physics (IIT Bhubaneswar) | B.Sc (Delhi University) | 5 Years Experience</p>
             </div>
             <div class="teacher-card">
-                <h3>Dr. Vikram Patel (IIT Madras)</h3>
-                <p>Mathematics expert specializing in problem-solving techniques</p>
+                <h3>Dr. Sunita Ma'am (Chemistry)</h3>
+                <p>Ph.D Chemistry | 6 Years Teaching Experience</p>
             </div>
+        </section>
+
+        <section id="locations" class="location-section">
+            <h2>Our Centers in Alwar</h2>
+            <ul class="policy-list">
+                <li>DS Complex, Shyam Nagar, Near Bus Stand</li>
+                <li>Modern Library, Rameshwar Colony, Near Railway Station</li>
+                <li>Modern Library, Khetri Nagar, Near SBI ATM</li>
+                <li>Rajesh Sharma Market, Madanganj</li>
+                <li>Home Classes Available via Live Sessions</li>
+            </ul>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Class Schedule & Registration</h2>
+            <p>Morning Batch: 5 AM - 7 AM</p>
+            <p>Evening Batch: 5 PM - 7 PM</p>
+            <p>All live classes recorded and available for revision</p>
+            <h3 style="margin-top:1rem;">Admissions Open!</h3>
+            <p>Contact Now: 9267998156</p>
+            <a href="#contact" class="btn" onclick="showAdmissionAlert()">Book Free Demo Class</a>
         </section>
     </div>
 
-    <section class="contact-section" id="contact">
-        <h2>Start Your JEE Journey Today</h2>
-        <p>Address: 123 Academic Road, Kota, Rajasthan</p>
-        <p>Email: contact@iitianacademy.com</p>
-        <a href="#contact" class="btn" onclick="showAdmissionAlert()">Book Free Demo Class</a>
-    </section>
-
     <footer class="footer">
+        <p>"Empower your children to become self-reliant - they shouldn't need others' examples to grow confident"</p>
         <p>© 2023 IITian Academy. All rights reserved.</p>
     </footer>
 
